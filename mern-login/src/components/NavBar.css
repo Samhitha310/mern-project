@@ -1,0 +1,35 @@
+/* src/NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 50px; /* Adjust the size of the logo */
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    padding: 10px; /* Adds padding around the logo */
+    background-color: white; /* Optionally, add a background color around the logo */
+    border: 2px solid #fff; /* Optional: adds a white border around the circle */
+  }
+  
+  /* Add padding to prevent content from being hidden behind the navbar */
+  body {
+    margin-top: 60px; /* Adjust this depending on navbar height */
+  }
+  

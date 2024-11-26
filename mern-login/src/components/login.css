@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 250px;
+  margin-left: 250px;
+  height: 100vh;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column; /* Stack heading and form vertically */
+  align-items: center;
+  width: 100%;
+}
+
+.login-header {
+  position:absolute;
+  top: 60px; /* Position heading at the top */
+  left: 20px; /* Adjust left position */
+  margin-top: 50px;
+}
+
+.login-header h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #333;
+}
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Take full height */
+  width: 100%; /* Take full width */
+}
+
+/* Form styling */
+.login-form {
+  background: white;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-left: 500px;
+}
+
+/* Input field styling */
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button styling */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}

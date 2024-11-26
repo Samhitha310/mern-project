@@ -1,0 +1,75 @@
+.create-employee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Center the content vertically */
+  align-items: center;  /* Center the content horizontally */
+  height: 118vh;  /* Full viewport height */
+  padding: 20px;
+  box-sizing: border-box;  /* Include padding in the element's total width/height calculation */
+}
+
+h2 {
+  align-self: flex-start; /* Positions the heading on the top left */
+  margin-bottom: -20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Align the content at the top of the form */
+  width: 242%;  /* Make the form take up full width of the container */
+  max-width: 400px;  /* Adjust form width to a maximum size */
+    /* Add padding inside the form */
+  background-color: #f9f9f9;
+  box-sizing: border-box;  /* Ensure padding is included within the form width */
+  margin-right: -1000px;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.success-message,
+.error-message {
+  color: green;
+  margin-bottom: 10px;
+}

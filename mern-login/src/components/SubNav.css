@@ -1,0 +1,107 @@
+.subnav {
+    background-color: #444;
+    padding: 15px 0; /* Adjust padding as needed */
+    position: fixed; /* Fix the subnav below the navbar */
+    top: 80px; /* Position it below the navbar (adjust according to navbar height) */
+    left: 0;
+    width: 100%;
+    z-index: 9; /* Keep it below the navbar */
+}
+  
+  /* Navigation container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px; /* Center the nav links with a max width */
+    width: 100%;
+  }
+  
+  /* Individual nav items */
+  .nav-links li {
+    margin: 0 15px; /* Consistent spacing between items */
+  }
+  
+  /* Common link styles */
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Home link */
+  .nav-links .home {
+    font-weight: bold;
+  }
+  
+  /* Home hover effect */
+  .nav-links .home:hover {
+    color: #00bcd4;
+  }
+  
+  /* Employee List link */
+  .nav-links .employee-list {
+    font-style: normal;
+  }
+  
+  /* Employee List hover effect */
+  .nav-links .employee-list:hover {
+    color: #ff5722;
+  }
+  
+  .nav-links .employee-name {
+    color: #ffcc00; /* A warm gold/yellow to stand out on black */
+    font-style: italic; /* Optional, makes it different from others */
+    font-weight: bold; /* To emphasize importance */
+    margin-left: auto; /* Push to the right */
+    text-decoration: none; /* Keep it clean without underlines */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  /* Employee Name hover effect */
+  .nav-links .employee-name:hover {
+    color: #ff9800;
+  }
+  
+  /* Logout link */
+  .nav-links .logout {
+    font-weight: bold;
+    color: #f44336;
+    margin-left: 15px; /* Slight spacing from the employee name */
+  }
+  
+  /* Logout hover effect */
+  .nav-links .logout:hover {
+    color: #d32f2f;
+  }
+  
+  /* General hover effect */
+  .nav-links a:hover {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .nav-links .employee-name {
+      margin-left: 0; /* Reset margin for mobile */
+    }
+  
+    .nav-links .logout {
+      margin-left: 0; /* Reset margin for mobile */
+    }
+  }
+  
